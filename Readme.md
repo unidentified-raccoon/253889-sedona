@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Yana Denisenko](https://up.htmlacademy.ru/htmlcss/15/user/253889).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Рубец] (https://up.htmlacademy.ru/htmlcss/15/user/41580).
 
 ---
 
