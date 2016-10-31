@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
+<!--header-->
 		<header class="main-header">
 			<div class="header-wrapper">
 				<a class="logo-main" href="#" title="Sedona"><img src="http://placehold.it/137x70" alt="Sedona logo" height="70" width="137"></a>
@@ -19,16 +20,20 @@
 				</nav>	
 			</div>
 		</header>
-
+<!--main-->
 		<main>
+			<h1 class="hidden-content">Седона - выбор гостиницы</h1><!--hidden h1-->
+<!--search-tools-->
 			<section class="filter-wrapper">
 				<div class="filter-infrastructure">
 					<h2>Инфраструктура:</h2>
     				<label>
-    					<input type="checkbox">Бассейн
+    					<input type="checkbox">
+    					<span>Бассейн</span>
     				</label>
     				<label>
-    					<input type="checkbox">Парковка
+    					<input type="checkbox">
+    					<span>Парковка</span>
     				</label>
     				<label>
     					<input type="checkbox">wi-fi
@@ -37,13 +42,16 @@
 				<div class="filter-house-type">
 					<h2>Тип жилья:</h2>
     				<label>
-    					<input type="checkbox">Гостиница
+    					<input type="checkbox">
+    					<span>Гостиница</span>
     				</label>
     				<label>
-    					<input type="checkbox">Мотель
+    					<input type="checkbox">
+    					<span>Мотель</span>
     				</label>
     				<label>
-    					<input type="checkbox">Апартаменты
+    					<input type="checkbox">
+    					<span>Апартаменты</span>
     				</label>
 				</div>
 				<div class="price-filter">
@@ -58,6 +66,7 @@
 					<input class="btn" type="submit" value="Показать">
 				</div>
 			</section>
+<!--search-results-->
 			<div class="wrapper">
 				<div class="seach-results">
 					<div>Найдено: 3</div>
@@ -77,11 +86,11 @@
 					<div class="hotel-image"><img src="http://placehold.it/135x90" alt="Amara resort and spa hotel" height="90" width="135"></div>
 					<h2>Amara resort and spa</h2>
 					<div class="wrapper left">
-						Гостиница↩
+						<span>Гостиница</span>
 						<a class="btn" href="#">Подробнее</a>
 					</div>
 					<div class="wrapper right">
-						от 3500 р.
+						<span>от 3500 р.</span>
 						<a class="btn" href="#">Забронировать</a>
 					</div>
 				</div>
@@ -127,7 +136,7 @@
 				</div>
 			</article>
 		</main>
-
+<!--footer-->
 		<footer class="footer-main">
 			<a class="footer-instagram-link" href="#">#visitsedona</a>
 			<div class="footer-social">
