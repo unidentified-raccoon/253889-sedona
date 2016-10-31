@@ -1,0 +1,29 @@
+/*по заданию нужно было указать текстовые стили для body и заголовков первых двух уровней. 
+я сделала немного иначе, потому что <h2> у меня стилизованы по разному, а видимого в макете <h1> на мой взгляд нет. */
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.857;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.results-filter {
+  font-family: "PT Sans", sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  color: rgb(0, 0, 0);
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.hotel h2 {
+  font-family: "PT Sans", sans-serif;
+  font-size: 21px;
+  line-height: 1.238;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+}
