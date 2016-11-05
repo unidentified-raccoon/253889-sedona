@@ -1,5 +1,5 @@
-/*по заданию нужно было указать текстовые стили для body и заголовков первых двух уровней. 
-я сделала немного иначе, потому что <h2> у меня стилизованы по разному, а видимого в макете <h1> на мой взгляд нет. */
+/*background-color задан как цвет подсказка чтобы было проще его потом заменить или удалитьб ну и мне так было проще конечно,
+может и тебе для ускорения проверки пригодится*/
 
 body {
   font-family: "PT Sans", sans-serif;
@@ -26,4 +26,217 @@ body {
   color: rgb(0, 0, 0);
   font-weight: bold;
   text-transform: uppercase;
+}
+
+/*скрывает контент предназначенный только для "читалок"*/
+.hidden-content {
+  position: absolute;
+  left: -9999px; 
+}
+
+header {
+  min-width: 768px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*меню навигации*/
+.navigation {
+  height:56px;
+  font-size: 0;/*убирает пробелы между inline-blocks*/
+  background-color: rgba(33, 44, 88, 0.3); /*цвет подсказка*/
+}
+
+ul {
+  padding: 0;
+}
+
+.navigation li {
+  display: inline-block;
+  width: 20%;
+  font-size: 14px;/*восстанавливает размер шрифта после обнуления пробелов*/
+  background-color: rgba(33, 89, 88, 0.3);/*цвет подсказка*/
+}
+
+.navigation li:nth-child(3) {
+  margin-left: 20%;
+}
+
+.logo-main {
+  width: 137px;
+  height: 70px;
+  display: block;
+  margin: 0 auto;
+}
+
+/*main*/
+main {
+  min-width: 768px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero {
+  height: 642px;
+  margin-bottom: 7px;
+  padding-top: 70px;
+  background-color: rgba(33, 89, 145, 0.3);/*цвет подсказка*/
+}
+
+.welcome {
+  width: 460px;
+  height: 360px;
+  margin: 0 auto 140px;
+}
+
+.hero h2,
+.hero div:last-child {
+  text-align: center;
+}
+
+.advantage {
+  width: 33%;
+  height: 260px;
+  background-color: rgba(7, 89, 145, 0.3);/*цвет подсказка*/
+}
+
+.advantage-image {
+  width: 67%;
+  height: 260px;
+  background-color: rgba(179, 66, 244, 0.3);/*цвет подсказка*/
+}
+
+.advantage-row .advantage:nth-child(2) {
+  width: 34%;
+  background-color: rgba(139, 155, 149, 0.3);/*цвет подсказка*/
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.clearfix::after {
+  content:'';
+  display: table;
+  clear: both;
+}
+
+.feature {
+  width: 33%;
+  height: 330px;
+  background: rgba(2, 23, 249, 0.3);
+}
+
+.feature-wrapper .feature:nth-child(2) {
+  width: 34%;
+  background: rgba(108, 0, 170, 0.3);
+}
+
+.feature-logo {
+  width: 75px;
+  height: 72px;
+  margin: 0 auto;
+}
+
+.form-wrapper {
+  height: 290px;
+  background-color: rgba(189, 170, 10, 0.3);/*цвет подсказка*/
+}
+
+.form {
+  width: 568px;
+  height: 480px;
+  margin: 0 auto;
+  background-color: rgba(89, 170, 10, 0.3);/*цвет подсказка*/
+}
+
+.form-header {
+  height: 86px;
+  background-color: rgb(118, 99, 87);
+}
+
+.map {
+  height: 474px;
+  background-color: rgba(89, 40, 67, 0.3);/*цвет подсказка*/
+}
+
+.footer-main {
+  min-width: 768px;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 120px;
+  background-color: rgba(34, 198, 87, 0.3);/*цвет подсказка*/
+}
+
+.footer-instagram-link,
+.footer-copyright {
+  width: 33%
+}
+
+.footer-social {
+  width: 34%;
+}
+
+/*стили для catalog*/
+.filter-wrapper {
+  height: 217px;
+  background-color: rgba(34, 198, 87, 0.3);/*цвет подсказка*/
+}
+
+.filter-infrastructure {
+  width: 20%;
+  height: 217px;
+  background-color: rgba(89, 40, 67, 0.3);/*цвет подсказка*/
+}
+
+.filter-house-type {
+  width: 20%;
+  height: 217px;
+  background-color: rgba(89, 40, 67, 0.3);/*цвет подсказка*/
+}
+
+.price-filter {
+  width: 40%;
+  height: 217px;
+  background-color: rgba(89, 40, 67, 0.3);/*цвет подсказка*/
+}
+
+.wrapper-search {
+  height: 86px;
+  background-color: rgba(89, 170, 10, 0.3);/*цвет подсказка*/
+}
+
+.results-amount {
+  width: 15%;
+}
+
+.results-filter {
+  width: 50%;
+}
+
+.results-filter li {
+  display: inline-block;
+  background-color: rgba(33, 89, 88, 0.3);
+}
+
+.hotel .block {
+  height: 150px;
+}
+
+.hotel .hotel-image {
+  width: 135px;
+  height: 90px;
+  margin: 30px 0;
+}
+
+.hotel {
+  background: rgba(255, 250, 168, 0.3);/*цвет подсказка*/
+}
+
+.hotel-information {
+  width: 290px;
 }
