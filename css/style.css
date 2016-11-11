@@ -1,31 +1,16 @@
-/*background-color задан как цвет подсказка чтобы было проще его потом заменить или удалитьб ну и мне так было проще конечно,
-может и тебе для ускорения проверки пригодится*/
+/*в дальнейшем я поменяю два спрайта на один, когда определюсь со всемэлементами которые хочу туда загнать :)) */
+/*проверь пожалуйста, подключился ли у меня шрифт. не могу понять, не вижу разницы */
 
 body {
-  font-family: "PT Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
-  line-height: 1.857;
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.results-filter {
-  font-family: "PT Sans", sans-serif;
-  font-size: 12px;
-  line-height: 1.5;
+  line-height: 21px;
   color: rgb(0, 0, 0);
   font-weight: normal;
   text-transform: uppercase;
-}
-
-.hotel h2 {
-  font-family: "PT Sans", sans-serif;
-  font-size: 21px;
-  line-height: 1.238;
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  text-transform: uppercase;
+  background-color: rgb(242, 242, 242);
 }
 
 /*скрывает контент предназначенный только для "читалок"*/
@@ -38,27 +23,58 @@ header {
   min-width: 768px;
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
+}
+
+.logo-main {
+  position: absolute;
+  top: 0;
+  left: 45%;
+  width: 138px;
+  height: 70px;
+  margin-left: 50%;
 }
 
 /*меню навигации*/
-.navigation {
-  height:56px;
+.navigation-main {
   font-size: 0;/*убирает пробелы между inline-blocks*/
-  background-color: rgba(33, 44, 88, 0.3); /*цвет подсказка*/
+  background-color: rgb(255, 255, 255);
 }
 
-ul {
-  padding: 0;
-}
-
-.navigation li {
+.navigation-main a {
   display: inline-block;
-  width: 20%;
-  font-size: 14px;/*восстанавливает размер шрифта после обнуления пробелов*/
-  background-color: rgba(33, 89, 88, 0.3);/*цвет подсказка*/
+  padding: 15px 0;
+  text-align: center;
+  width: 100%;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
 }
 
-.navigation li:nth-child(3) {
+.navigation-main a:hover {
+  color: rgb(129, 179, 210);
+}
+
+.navigation-main a:active {
+  color: rgb(129, 179, 210);
+}
+
+.navigation-main ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.navigation-main li {
+  display: inline-block;
+  vertical-align: top;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;/*восстанавливает размер шрифта после обнуления пробелов*/
+  line-height: 26px;
+  font-weight: bold;
+  width: 20%;
+}
+
+.navigation-main li:nth-child(3) {
   margin-left: 20%;
 }
 
@@ -80,35 +96,105 @@ main {
   height: 642px;
   margin-bottom: 7px;
   padding-top: 70px;
-  background-color: rgba(33, 89, 145, 0.3);/*цвет подсказка*/
+  background: rgb(255, 255, 255) url('../img/background-hero.jpg') no-repeat;
+  background-position: center bottom;
 }
 
 .welcome {
-  width: 460px;
-  height: 360px;
-  margin: 0 auto 140px;
+  width: 458px;
+  height: 352px;
+  margin: 0 auto 80px;
 }
 
-.hero h2,
-.hero div:last-child {
+.brand-text-wrapper {
+  background-color: rgb(255, 255, 255);
+}
+
+.brand-text,
+.brand-text-intro {
   text-align: center;
+}
+
+.brand-text {
+  display: block;
+  width: 500px;
+  margin: 0 auto;
+  margin-bottom: 34px;
+  padding-top: 59px;
+  font-size: 21px;
+  line-height: 26px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.brand-text-intro {
+  display: block;
+  width: 500px;
+  margin: 0 auto;
+  padding-bottom: 53px;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgb(0, 0, 0);
+}
+
+.advantage-first-wrapper{
+  background: rgb(178,143,113) url('../img/background-sedona.jpg') no-repeat;
+  background-position: center right;
+  background-size: 67%;
+}
+
+.advantage-second-wrapper{
+  background: rgb(178,143,113) url('../img/background-bridge.jpg') no-repeat;
+  background-position: center left;
+  background-size: 67%;
 }
 
 .advantage {
   width: 33%;
-  height: 260px;
-  background-color: rgba(7, 89, 145, 0.3);/*цвет подсказка*/
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: rgb(129, 179, 210);
 }
 
-.advantage-image {
-  width: 67%;
-  height: 260px;
-  background-color: rgba(179, 66, 244, 0.3);/*цвет подсказка*/
+.advantage-name {
+  width: 150px;
+  margin: 0 auto;
+  padding-bottom: 25px;
+  padding-top: 46px;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
 }
 
-.advantage-row .advantage:nth-child(2) {
-  width: 34%;
-  background-color: rgba(139, 155, 149, 0.3);/*цвет подсказка*/
+.advantage-number {
+  width: 150px;
+  margin: 0 auto;
+  padding-bottom: 21px;
+}
+
+.advantage-text {
+  width: 300px;
+  margin: 0 auto;
+  padding-bottom: 39px;
+}
+
+.advantage-row {
+  background-color: rgb(238, 238, 238);
+}
+
+.advantage-row .advantage {
+  width: 33%;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  background-color: rgb(238, 238, 238);
+}
+
+.advantage-row .advantage-name {
+  padding-top: 50px;
+}
+
+.advantage-row .advantage-text {
+  width: 266px;
 }
 
 .left {
@@ -125,118 +211,463 @@ main {
   clear: both;
 }
 
+.feature-wrapper {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+
 .feature {
   width: 33%;
-  height: 330px;
-  background: rgba(2, 23, 249, 0.3);
+  text-align: center;
 }
 
-.feature-wrapper .feature:nth-child(2) {
-  width: 34%;
-  background: rgba(108, 0, 170, 0.3);
+.feature-name {
+  position: relative;
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 60px;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+  padding-top: 105px;
+  padding-bottom: 28px;
 }
 
-.feature-logo {
+.feature-text {
+  width: 285px;
+  margin: 0 auto;
+  padding-bottom: 84px;
+}
+
+.feature-home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
   width: 75px;
   height: 72px;
-  margin: 0 auto;
+  margin-left: -38px;
+  background-image: url('../img/sprite.png');
+  background-repeat: no-repeat;
+  background-position: -10px -712px;
+}
+
+.feature-food::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 75px;
+  height: 72px;
+  margin-left: -38px;
+  background-image: url('../img/sprite.png');
+  background-repeat: no-repeat;
+  background-position: -10px -622px;
+}
+
+.feature-present::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 75px;
+  height: 76px;
+  margin-left: -38px;
+  background-image: url('../img/sprite.png');
+  background-repeat: no-repeat;
+  background-position: -10px -804px;
 }
 
 .form-wrapper {
-  height: 290px;
-  background-color: rgba(189, 170, 10, 0.3);/*цвет подсказка*/
+  text-align: center;
+  background-color: rgb(255, 255, 255);
 }
 
-.form {
-  width: 568px;
-  height: 480px;
+.form-description-name {
+  width: 435px;
   margin: 0 auto;
-  background-color: rgba(89, 170, 10, 0.3);/*цвет подсказка*/
+  margin-bottom: 30px;
+  padding-top: 55px;
+  font-size: 30px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.form-description-text {
+  width: 435px;
+  margin: 0 auto;
+  padding-bottom: 135px;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .form-header {
-  height: 86px;
+  width: 568px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 33px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
   background-color: rgb(118, 99, 87);
 }
 
-.map {
-  height: 474px;
-  background-color: rgba(89, 40, 67, 0.3);/*цвет подсказка*/
+.form-content {
+  width: 454px;
+  margin: 0 auto;
+  padding: 56px 57px;
+  background-color: rgb(255, 255, 255);
+}
+
+.btn-search {
+  display: block;
+  padding-top: 18px;
+  padding-bottom: 20px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: rgb(129, 179, 210);
+  text-decoration: none;
 }
 
 .footer-main {
   min-width: 768px;
   max-width: 1200px;
   margin: 0 auto;
-  height: 120px;
-  background-color: rgba(34, 198, 87, 0.3);/*цвет подсказка*/
+  padding-top: 36px;
+  padding-bottom: 36px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
 }
 
-.footer-instagram-link,
-.footer-copyright {
-  width: 33%
+.footer-instagram-link {
+  width: 33%;
+  text-align: center;
+}
+
+.footer-instagram-link a {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 11px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
 }
 
 .footer-social {
-  width: 34%;
+  width: 33%;
+  text-align: center;
+}
+
+.social-btn {
+  display: inline-block;
+  width: 46px;
+  height: 48px;
+  margin: 0 3px;
+  vertical-align: top;
+  text-decoration: none;
+  background-color: rgb(129, 179, 210);
+  font-size: 0;
+}
+
+.social-btn-twitter {
+  background-image: url('../img/sprite.png');
+  background-repeat: no-repeat;
+  background-position: -10px -214px;
+}
+
+.social-btn-twitter:hover {
+  background-position: -10px -350px;
+}
+
+.social-btn-fb {
+  background-image: url('../img/sprite.png');
+  background-repeat: no-repeat;
+  background-position: -10px -10px;
+}
+
+.social-btn-fb:hover {
+  background-position: -10px -146px;
+}
+
+.social-btn-youtube {
+  background-image: url('../img/sprite.png');
+  background-repeat: no-repeat;
+  background-position: -10px -418px;
+}
+
+.social-btn-youtube:hover {
+  background-image: url('../img/sprite.png');
+  background-repeat: no-repeat;
+  background-position: -10px -554px;
+}
+
+.footer-copyright {
+  width: 33%;
+  text-align: center;
+}
+
+.copyright-text {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 12px;
+  padding-bottom: 15px;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.copyright-logo {
+  display: inline-block;
+  width: 113px;
+  height: 39px;
+  margin-top: 5px;
+  margin-left: 6px;
+  font-size: 0;
+  text-decoration: none;
 }
 
 /*стили для catalog*/
 .filter-wrapper {
-  height: 217px;
-  background-color: rgba(34, 198, 87, 0.3);/*цвет подсказка*/
+  background-color: rgb(255, 255, 255);
+}
+
+.inner-block {
+  padding: 0 6%;
 }
 
 .filter-infrastructure {
   width: 20%;
-  height: 217px;
-  background-color: rgba(89, 40, 67, 0.3);/*цвет подсказка*/
+  background-color: rgba(60, 103, 137);
+}
+
+.filter-infrastructure h2 {
+  padding-top: 28px;
+  padding-bottom: 27px;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
+  // color: rgb(255, 255, 255);
 }
 
 .filter-house-type {
   width: 20%;
-  height: 217px;
-  background-color: rgba(89, 40, 67, 0.3);/*цвет подсказка*/
+  background-color: rgba(60, 103, 137);
+}
+
+.filter-house-type h2 {
+  padding-top: 28px;
+  padding-bottom: 27px;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
+  // color: rgb(255, 255, 255);
 }
 
 .price-filter {
   width: 40%;
-  height: 217px;
-  background-color: rgba(89, 40, 67, 0.3);/*цвет подсказка*/
 }
 
 .wrapper-search {
-  height: 86px;
-  background-color: rgba(89, 170, 10, 0.3);/*цвет подсказка*/
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(229, 229, 229);
 }
 
 .results-amount {
-  width: 15%;
+  display: inline-block;
+  width: 130px;
+  vertical-align: top;
+  padding-top: 28px;
+  margin-right: 45px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
 }
 
 .results-filter {
-  width: 50%;
-}
-
-.results-filter li {
   display: inline-block;
-  background-color: rgba(33, 89, 88, 0.3);
+  min-width: 92px;
+  vertical-align: top;
+  padding-top: 33px;
+  margin-top: 0;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: normal;
+  color: rgb(0, 0, 0);
 }
 
-.hotel .block {
-  height: 150px;
+.filter-value {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 0;/*убирает пробелы между inline-blocks*/
+}
+
+.filter-value li {
+  display: inline-block;
+  padding: 33px 17px;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgb(177, 177, 177);
+}
+
+.range-price a {
+  color: rgb(129, 179, 210);
+  text-decoration: none;
+}
+
+.range-type a {
+  color: rgb(178, 178, 178);
+  text-decoration: none;
+  border-bottom: 1px dotted rgb(129, 179, 210);
+}
+
+.range-type a:hover {
+  color: rgb(129, 179, 210);
+}
+
+.range-rating a {
+  color: rgb(178, 178, 178);
+  text-decoration: none;
+  border-bottom: 1px dotted rgb(129, 179, 210);
+}
+
+.range-rating a:hover {
+  color: rgb(129, 179, 210);
+}
+
+.hotel {
+  border-bottom: 1px solid rgb(229, 229, 229);
+  padding: 0 6%;
+  background-color: rgb(255, 255, 255);
 }
 
 .hotel .hotel-image {
   width: 135px;
   height: 90px;
-  margin: 30px 0;
+  padding: 30px 30px 30px 0;
 }
 
-.hotel {
-  background: rgba(255, 250, 168, 0.3);/*цвет подсказка*/
+.hotel-name {
+  padding-top: 25px;
+  margin: 0;
+  margin-bottom: 7px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.hotel-name a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.hotel-name a:hover {
+  color: rgb(129, 179, 210);
 }
 
 .hotel-information {
-  width: 290px;
+  margin-right: 6px;
+}
+
+.hotel-type {
+  display: block;
+  margin-bottom: 14px;
+}
+
+.hotel-information .btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: 3px 16px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: rgb(129, 179, 210);
+  color: rgb(255, 255, 255);
+}
+
+.hotel-information .btn:hover {
+  background-color: rgb(102, 158, 192);
+}
+
+.hotel-price {
+  display: block;
+  margin-bottom: 14px;
+}
+
+.hotel-booking .btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: 3px 16px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: rgb(118, 99, 87);
+  color: rgb(255, 255, 255);
+}
+
+.hotel-booking .btn:hover {
+  background-color: rgb(96, 78, 67);
+}
+
+.rating-points {
+  background-color: rgb(242, 242, 242);
+  color: rgb(102, 102, 102);
+  padding: 0 16px;
+}
+
+.rating-block {
+  margin-top: 29px;
+  padding-top: 54px;
+  position: relative;
+}
+
+.rating-block-first::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 89px;
+  height: 17px;
+  margin-left: -38px;
+  background-image: url('../img/sprite-arrows.png');
+  background-repeat: no-repeat;
+  background-position: -10px -10px;
+}
+
+.rating-block-second::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 65px;
+  height: 17px;
+  margin-left: -38px;
+  background-image: url('../img/sprite-arrows.png');
+  background-repeat: no-repeat;
+  background-position: -10px -47px;
+}
+
+.rating-block-third::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 42px;
+  height: 17px;
+  margin-left: -38px;
+  background-image: url('../img/sprite-arrows.png');
+  background-repeat: no-repeat;
+  background-position: -10px -84px;
 }
