@@ -93,11 +93,10 @@ main {
 }
 
 .hero {
-  height: 642px;
-  margin-bottom: 7px;
+  min-height: 642px;
   padding-top: 70px;
-  background: rgb(255, 255, 255) url('../img/background-hero.jpg') no-repeat;
-  background-position: center bottom;
+  background: rgb(87,158,217) url('../img/background-hero.jpg') no-repeat;
+  background-position: center -80px;
 }
 
 .welcome {
@@ -167,9 +166,25 @@ main {
 }
 
 .advantage-number {
-  width: 150px;
+  position: relative;
+  top: -25px;
+  display: inline-block;
+  z-index: 2;
+  padding: 0 5px;
   margin: 0 auto;
-  padding-bottom: 21px;
+  margin-bottom: 21px;
+  background-color: rgb(129, 179, 210);
+}
+
+.number-wrapper::after {
+  content: '';
+  position: relative;
+  display: block;
+  z-index: 1;
+  top: -56px;
+  margin: 0 auto;
+  width: 50px;
+  border-bottom: 1px solid rgb(255, 255, 255);
 }
 
 .advantage-text {
@@ -191,6 +206,21 @@ main {
 
 .advantage-row .advantage-name {
   padding-top: 50px;
+}
+
+.advantage-row .advantage-number {
+  background-color: rgb(238, 238, 238);
+}
+
+.advantage-row .number-wrapper::after {
+  content: '';
+  position: relative;
+  display: block;
+  z-index: 1;
+  top: -56px;
+  margin: 0 auto;
+  width: 50px;
+  border-bottom: 1px solid rgb(0, 0, 0);
 }
 
 .advantage-row .advantage-text {
@@ -296,7 +326,7 @@ main {
 .form-description-text {
   width: 435px;
   margin: 0 auto;
-  padding-bottom: 135px;
+  padding-bottom: 48px;
   font-size: 14px;
   line-height: 24px;
 }
@@ -317,13 +347,15 @@ main {
 .form-content {
   width: 454px;
   margin: 0 auto;
-  padding: 56px 57px;
+  padding: 57px 57px;
+  font-size: 0;
   background-color: rgb(255, 255, 255);
 }
 
 .btn-search {
   display: block;
   padding-top: 18px;
+  margin-top: 54px;
   padding-bottom: 20px;
   font-size: 21px;
   line-height: 26px;
@@ -332,6 +364,99 @@ main {
   color: rgb(255, 255, 255);
   background-color: rgb(129, 179, 210);
   text-decoration: none;
+}
+
+.form-date span {
+  display: inline-block;
+  width: 112px;
+  margin-bottom: 29px;
+  padding: 6px 0;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.form-date input {
+  width: 288px;
+  padding: 6px 38px 6px 15px;
+  margin-bottom: 29px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: rgb(242, 242, 242);
+  border: none;
+}
+
+.count-buttons {
+  display: inline-block;
+  height: 38px;
+  width: 114;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  background-color: rgb(242, 242, 242);
+}
+
+.form-count-adults,
+.form-count-children {
+  display: inline-block;
+}
+
+.form-count-adults>span {
+  display: inline-block;
+  width: 112px;
+  padding: 6px 0;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.form-count-children>span {
+  display: inline-block;
+  width: 56px;
+  padding: 6px 0 6px 43px;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.form-content button {
+  width: 38px;
+  border: none;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  color: rgb(169, 169, 169);
+  font-weight: bold;
+  background-color:rgb(242, 242, 242);
+}
+
+.count-number {
+  display: inline-block;
+  width: 38px;
+  height: 32px;
+  padding-top: 6px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.form-date {
+  position: relative;
+}
+
+.calendar {
+  position: absolute;
+  bottom: -32px;
+  right: 0;
+  margin-bottom: 19px;
+  display: block;
+  width: 36px;
+  height: 36px;
+  background: rgb(242, 242, 242) url('../img/calendar-grey.png') no-repeat;
+  background-position: center;
 }
 
 .footer-main {
@@ -433,8 +558,10 @@ main {
 }
 
 /*стили для catalog*/
+/*filters*/
 .filter-wrapper {
-  background-color: rgb(255, 255, 255);
+  background: rgb(129, 179, 210) url('../img/background-blured.jpg') no-repeat;
+  background-position: center;
 }
 
 .inner-block {
@@ -452,7 +579,7 @@ main {
   font-size: 16px;
   line-height: 21px;
   font-weight: bold;
-  // color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 .filter-house-type {
@@ -466,9 +593,43 @@ main {
   font-size: 16px;
   line-height: 21px;
   font-weight: bold;
-  // color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
+/*two side columns*/
+.filter-checkbox {
+  position: relative;
+  display: block;
+  margin-bottom: 23px;
+  padding-left: 41px;
+  padding-top: 2px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+
+.filter-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.filter-checkbox input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 26px;
+  height: 22px;
+  background: url('../img/checkbox.png') no-repeat;
+}
+
+.filter-checkbox input[type="checkbox"]:checked + .checkbox-indicator {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 26px;
+  height: 22px;
+  background: url('../img/checkbox-checked.png') no-repeat;
+}
+
+/*price filter*/
 .price-filter {
   width: 40%;
 }
@@ -621,53 +782,29 @@ main {
   background-color: rgb(96, 78, 67);
 }
 
+.rating-block {
+  width: 120px;
+}
+
 .rating-points {
   background-color: rgb(242, 242, 242);
   color: rgb(102, 102, 102);
   padding: 0 16px;
+  margin-top: 50px;
 }
 
-.rating-block {
+.rating-stars ul {
+  padding: 0;
+  margin: 0;
   margin-top: 29px;
-  padding-top: 54px;
-  position: relative;
+  list-style: none;
 }
 
-.rating-block-first::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 89px;
+.rating-stars li {
+  float: right;
+  vertical-align: top;
+  margin-left: 2px;
+  width: 18px;
   height: 17px;
-  margin-left: -38px;
-  background-image: url('../img/sprite-arrows.png');
-  background-repeat: no-repeat;
-  background-position: -10px -10px;
-}
-
-.rating-block-second::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 65px;
-  height: 17px;
-  margin-left: -38px;
-  background-image: url('../img/sprite-arrows.png');
-  background-repeat: no-repeat;
-  background-position: -10px -47px;
-}
-
-.rating-block-third::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 42px;
-  height: 17px;
-  margin-left: -38px;
-  background-image: url('../img/sprite-arrows.png');
-  background-repeat: no-repeat;
-  background-position: -10px -84px;
+  background: url('../img/star-blue.png') no-repeat;
 }
