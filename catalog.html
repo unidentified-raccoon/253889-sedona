@@ -3,12 +3,14 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Седона</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 <!--header-->
 		<header class="main-header">
-			<a class="logo-main" href="#" title="Sedona">
+			<a class="logo-main" href="index.html" title="Sedona">
 				<img src="img/logo-main.png" alt="Sedona logo" height="70" width="138">
 			</a>
 			<nav class="navigation-main">
@@ -16,7 +18,7 @@
 					<li><a href="#">Информация</a></li>
 					<li><a href="#">Фото и видео</a></li>
 					<li><a href="#">Карта штата</a></li>
-					<li class="active"><a href="#">Гостиницы</a></li>
+					<li class="navigation-active"><a href="#">Гостиницы</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -26,7 +28,7 @@
 <!--search-tools-->
 			<section class="filter-wrapper clearfix">
 				<div class="inner-block">
-					<div class="filter-infrastructure left">
+					<div class="filter-infrastructure">
 						<h2>Инфраструктура:</h2>
 	    				<label class="filter-checkbox">
 	    					<input type="checkbox">
@@ -45,7 +47,7 @@
 	    				</label>
 					</div>
 				</div>
-				<div class="filter-house-type left">
+				<div class="filter-house-type">
 					<h2>Тип жилья:</h2>
     				<label class="filter-checkbox">
     					<input type="checkbox">
@@ -63,7 +65,7 @@
     					Апартаменты
     				</label>
 				</div>
-				<div class="price-filter right">
+				<div class="price-filter">
 					<h2>Стоимость в сутки (р):</h2>
 					<div class="price-range-table"></div>
 					<label class="price-min">
@@ -89,20 +91,20 @@
 				</div>
 			</div>
 			<article class="hotel clearfix">
-				<div class="hotel-image left"><img src="img/hotel-amara-resort.jpg" alt="Amara resort and spa hotel" height="90" width="135"></div>
-				<div class="left clearfix">
+				<div class="hotel-image"><img src="img/hotel-amara-resort.jpg" alt="Amara resort and spa hotel" height="90" width="135"></div>
+				<div class="hotel-info-wrapper clearfix">
 					<h2 class="hotel-name"><a href="#">Amara resort and spa</a></h2>
-					<div class="hotel-information left">
+					<div class="hotel-information">
 						<span class="hotel-type">Гостиница</span>
 						<a class="btn" href="#">Подробнее</a>
 					</div>
-					<div class="hotel-booking left">
+					<div class="hotel-booking">
 						<span class="hotel-price">от 3500 р.</span>
 						<a class="btn" href="#">Забронировать</a>
 					</div>
 				</div>
-				<div class="rating-block right clearfix">
-					<div class="rating-stars right">
+				<div class="rating-block">
+					<div class="rating-stars">
 						<ul>
 							<li></li>
 							<li></li>
@@ -110,66 +112,66 @@
 							<li></li>
 						</ul>
 					</div>
-					<div class="rating-points right">Рейтинг: 8,5</div>
+					<div class="rating-points">Рейтинг: 8,5</div>
 				</div>
 			</article>
 			<article class="hotel clearfix">
-				<div class="hotel-image left"><img src="img/hotel-desert-queil.jpg" alt="Desert quail inn" height="90" width="135"></div>
-				<div class="left clearfix">
+				<div class="hotel-image"><img src="img/hotel-desert-queil.jpg" alt="Desert quail inn" height="90" width="135"></div>
+				<div class="hotel-info-wrapper clearfix">
 					<h2 class="hotel-name"><a href="#">Desert quail inn</a></h2>
-					<div class="hotel-information left">
+					<div class="hotel-information">
 						<span class="hotel-type">Мотель</span>
 						<a class="btn" href="#">Подробнее</a>
 					</div>
-					<div class="hotel-booking left">
+					<div class="hotel-booking">
 						<span class="hotel-price">от 2000 р.</span>
 						<a class="btn" href="#">Забронировать</a>
 					</div>
 				</div>
-				<div class="rating-block right clearfix">
-					<div class="rating-stars right">
+				<div class="rating-block">
+					<div class="rating-stars">
 						<ul>
 							<li></li>
 							<li></li>
 						</ul>
 					</div>
-					<div class="rating-points right">Рейтинг: 8,9</div>
+					<div class="rating-points">Рейтинг: 8,9</div>
 				</div>
 			</article>
 			<article class="hotel clearfix">
-				<div class="hotel-image left"><img src="img/hotel-villas-at-poco.jpg" alt="Villas at poco diablo" height="90" width="135"></div>
-				<div class="left clearfix">
+				<div class="hotel-image"><img src="img/hotel-villas-at-poco.jpg" alt="Villas at poco diablo" height="90" width="135"></div>
+				<div class="hotel-info-wrapper clearfix">
 					<h2 class="hotel-name"><a href="#">Villas at poco diablo</a></h2>
-					<div class="hotel-information left">
+					<div class="hotel-information">
 						<span class="hotel-type">Апартаменты</span>
 						<a class="btn" href="#">Подробнее</a>
 					</div>
-					<div class="hotel-booking left">
+					<div class="hotel-booking">
 						<span class="hotel-price">от 4000 р.</span>
 						<a class="btn" href="#">Забронировать</a>
 					</div>
 				</div>
-				<div class="rating-block right clearfix">
-					<div class="rating-stars right">
+				<div class="rating-block">
+					<div class="rating-stars">
 						<ul>
 							<li></li>
 							<li></li>
 							<li></li>
 						</ul>
 					</div>
-					<div class="rating-points right">Рейтинг: 9,2</div>
+					<div class="rating-points">Рейтинг: 9,2</div>
 				</div>
 			</article>
 		</main>
 <!--footer-->
 		<footer class="footer-main clearfix">
-			<div class="footer-instagram-link left"><a href="#">#visitsedona</a></div>
-			<div class="footer-social left">
+			<div class="footer-instagram-link"><a href="#">#visitsedona</a></div>
+			<div class="footer-social">
 				<a class="social-btn social-btn-twitter" href="#">Twitter</a>
 				<a class="social-btn social-btn-fb" href="#">Facebook</a>
 				<a class="social-btn social-btn-youtube" href="#">Youtube</a>
 			</div>
-			<div class="footer-copyright right">
+			<div class="footer-copyright">
 				<div>
 					<div class="copyright-text">Website by</div>
 					<a class="copyright-logo" href="https://htmlacademy.ru"><img src="img/logo-htmlAcademy.png" alt="html academy logo" height="39" width="113">HTML Academy</a>
