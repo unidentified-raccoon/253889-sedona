@@ -1,6 +1,3 @@
-/*в дальнейшем я поменяю два спрайта на один, когда определюсь со всемэлементами которые хочу туда загнать :)) */
-/*проверь пожалуйста, подключился ли у меня шрифт. не могу понять, не вижу разницы */
-
 body {
   margin: 0;
   padding: 0;
@@ -261,14 +258,6 @@ main {
   width: 266px;
 }
 
-// .left {
-//   float: left;
-// }
-
-// .right {
-//   float: right;
-// }
-
 .clearfix::after {
   content:'';
   display: table;
@@ -384,7 +373,7 @@ main {
   background-color: rgb(255, 255, 255);
 }
 
-.form-inputs {
+.form-hotel-search {
   margin-bottom: 54px;
 }
 
@@ -522,7 +511,7 @@ main {
   vertical-align: top;
 }
 
-.calendar {
+.calendar-icon {
   position: absolute;
   top: 8px;
   right: 9px;
@@ -534,11 +523,11 @@ main {
   background-position: -51px -214px;
 }
 
-.calendar:hover {
+.calendar-icon:hover {
   background-position: -262px -10px;
 }
 
-.calendar:active {
+.calendar-icon:active {
   background-position: -10px -214px;
 }
 
