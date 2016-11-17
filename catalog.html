@@ -46,35 +46,39 @@
                 			wi-fi
 	    				</label>
 					</div>
-				</div>
-				<div class="filter-house-type">
-					<h2>Тип жилья:</h2>
-    				<label class="filter-checkbox">
-    					<input type="checkbox">
-              			<span class="checkbox-indicator"></span>
-    					Гостиница
-    				</label>
-    				<label class="filter-checkbox">
-    					<input type="checkbox">
-              			<span class="checkbox-indicator"></span>
-    					Мотель
-    				</label>
-    				<label class="filter-checkbox">
-    					<input type="checkbox">
-              			<span class="checkbox-indicator"></span>
-    					Апартаменты
-    				</label>
-				</div>
-				<div class="price-filter">
-					<h2>Стоимость в сутки (р):</h2>
-					<div class="price-range-table"></div>
-					<label class="price-min">
-						<input type="range" min="0" max="3600" step="100" value="0">
-					</label>
-					<label class="price-max">
-						<input type="range" min="0" max="3600" step="100" value="3000">
-					</label>
-					<input class="btn" type="submit" value="Показать">
+					<div class="filter-house-type">
+						<h2>Тип жилья:</h2>
+	    				<label class="filter-checkbox">
+	    					<input type="checkbox">
+	              			<span class="checkbox-indicator"></span>
+	    					Гостиница
+	    				</label>
+	    				<label class="filter-checkbox">
+	    					<input type="checkbox">
+	              			<span class="checkbox-indicator"></span>
+	    					Мотель
+	    				</label>
+	    				<label class="filter-checkbox">
+	    					<input type="checkbox">
+	              			<span class="checkbox-indicator"></span>
+	    					Апартаменты
+	    				</label>
+					</div>
+					<div class="price-filter">
+						<div class="price-filter-name">Стоимость в сутки (р):</div>
+						<div class="price-controls">
+							<label class="min-price">от <input type="text" name="min-price" value="0"></label>
+							<label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+						</div>
+						<div class="range-controls">
+							<div class="scale">
+								<div class="bar"></div>
+							</div>
+							<div class="range-toggle range-toggle-min"></div>
+							<div class="range-toggle range-toggle-max"></div>
+						</div>
+						<button class="btn-price-filter" type="submit">Показать</button>
+					</div>
 				</div>
 			</section>
 <!--search-results-->

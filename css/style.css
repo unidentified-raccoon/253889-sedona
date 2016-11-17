@@ -26,10 +26,10 @@ header {
 .logo-main {
   position: absolute;
   top: 0;
-  left: 45%;
+  left: 50%;
   width: 138px;
   height: 70px;
-  margin-left: 50%;
+  transform:translateX(-69px);
 }
 
 /*меню навигации*/
@@ -84,8 +84,8 @@ header {
   width: 20%;
 }
 
-.navigation-main li:nth-child(3) {
-  margin-left: 20%;
+.navigation-main li:nth-child(2) {
+  margin-right: 20%;
 }
 
 .logo-main {
@@ -104,7 +104,7 @@ main {
 
 .hero {
   min-height: 642px;
-  padding-top: 70px;
+  padding-top: 75px;
   background: rgb(87,158,217) url('../img/background-hero.jpg') no-repeat;
   background-position: center -80px;
 }
@@ -118,12 +118,12 @@ main {
 .brand-text::before {
   content: '';
   position: absolute;
-  display: block;
   top: -57px;
   left: 0;
   width: 100%;
   height: 57px;
   background: url('../img/mask-hero.png') no-repeat;
+  background-size: 100% 57px;
 }
 
 .brand-text-wrapper {
@@ -140,7 +140,7 @@ main {
   display: block;
   width: 500px;
   margin: 0 auto;
-  margin-bottom: 34px;
+  margin-bottom: 31px;
   padding-top: 59px;
   font-size: 21px;
   line-height: 26px;
@@ -152,9 +152,9 @@ main {
   display: block;
   width: 500px;
   margin: 0 auto;
-  padding-bottom: 53px;
+  padding-bottom: 49px;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 26px;
   color: rgb(0, 0, 0);
 }
 
@@ -186,10 +186,10 @@ main {
 }
 
 .advantage-name {
-  width: 150px;
+  width: 154px;
   margin: 0 auto;
-  padding-bottom: 25px;
-  padding-top: 46px;
+  margin-bottom: 26px;
+  padding-top: 54px;
   font-size: 21px;
   line-height: 21px;
   font-weight: bold;
@@ -220,7 +220,7 @@ main {
 .advantage-text {
   width: 300px;
   margin: 0 auto;
-  padding-bottom: 39px;
+  padding-bottom: 52px;
 }
 
 .advantage-row {
@@ -236,7 +236,7 @@ main {
 }
 
 .advantage-row .advantage-name {
-  padding-top: 50px;
+  padding-top: 44px;
 }
 
 .advantage-row .advantage-number {
@@ -256,6 +256,7 @@ main {
 
 .advantage-row .advantage-text {
   width: 266px;
+  padding-bottom: 56px;
 }
 
 .clearfix::after {
@@ -280,17 +281,17 @@ main {
   width: 150px;
   margin: 0 auto;
   margin-top: 60px;
+  margin-bottom: 26px;
   font-size: 21px;
   line-height: 21px;
   font-weight: bold;
-  padding-top: 105px;
-  padding-bottom: 28px;
+  padding-top: 100px;
 }
 
 .feature-text {
   width: 285px;
   margin: 0 auto;
-  padding-bottom: 84px;
+  padding-bottom: 82px;
 }
 
 .feature-home::before {
@@ -320,7 +321,7 @@ main {
 .feature-present::before {
   content: '';
   position: absolute;
-  top: 0;
+  top: -4px;
   left: 50%;
   width: 75px;
   height: 76px;
@@ -338,7 +339,7 @@ main {
   width: 435px;
   margin: 0 auto;
   margin-bottom: 30px;
-  padding-top: 55px;
+  padding-top: 59px;
   font-size: 30px;
   line-height: 24px;
   font-weight: bold;
@@ -347,7 +348,7 @@ main {
 .form-description-text {
   width: 435px;
   margin: 0 auto;
-  padding-bottom: 48px;
+  padding-bottom: 46px;
   font-size: 14px;
   line-height: 24px;
 }
@@ -356,7 +357,7 @@ main {
   width: 568px;
   margin: 0 auto;
   text-align: center;
-  padding-top: 32px;
+  padding-top: 28px;
   padding-bottom: 33px;
   font-size: 21px;
   line-height: 26px;
@@ -366,28 +367,15 @@ main {
 }
 
 .form-content {
-  width: 454px;
+  width: 456px;
   margin: 0 auto;
-  padding: 57px 57px;
+  padding: 55px 56px;
   font-size: 0;
   background-color: rgb(255, 255, 255);
 }
 
-.form-hotel-search {
-  margin-bottom: 54px;
-}
-
-.btn-search {
-  display: block;
-  padding-top: 18px;
-  padding-bottom: 20px;
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: bold;
-  text-align: center;
-  color: rgb(255, 255, 255);
-  background-color: rgb(129, 179, 210);
-  text-decoration: none;
+.form-fields-wrapper {
+  margin-bottom: 55px;
 }
 
 .form-date span {
@@ -473,7 +461,7 @@ main {
   font-weight: bold;
 }
 
-.form-content button {
+.form-content .btn {
   width: 38px;
   padding-bottom: 4px;
   padding-top: 4px;
@@ -487,11 +475,11 @@ main {
   background-color: transparent;
 }
 
-.form-content button:hover {
+.form-content .btn:hover {
   color: rgb(0, 0, 0);
 }
 
-.form-content button:active {
+.form-content .btn:active {
   color: rgb(129, 179, 210);
 }
 
@@ -529,6 +517,31 @@ main {
 
 .calendar-icon:active {
   background-position: -10px -214px;
+}
+
+.btn-search {
+  display: block;
+  width: 100%;
+  padding-top: 18px;
+  padding-bottom: 16px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  background-color: rgb(129, 179, 210);
+  border: none;
+  cursor: pointer;
+}
+
+.btn-search:hover {
+  background-color: rgb(102, 158, 192);
+}
+
+.btn-search:active {
+  color: rgb(136, 182, 209);
+  background-color: rgb(84, 150, 189);
 }
 
 .footer-main {
@@ -663,9 +676,8 @@ main {
 }
 
 .filter-infrastructure {
-  width: 20%;
+  width: 150px;
   float: left;
-  background-color: rgba(60, 103, 137);
 }
 
 .filter-infrastructure h2 {
@@ -679,8 +691,9 @@ main {
 }
 
 .filter-house-type {
-  width: 20%;
+  width: 150px;
   float: left;
+  margin-left: 105px;
   background-color: rgba(60, 103, 137);
 }
 
@@ -731,8 +744,127 @@ main {
 
 /*price filter*/
 .price-filter {
-  width: 40%;
+  width: 26.6%;
+  padding-top: 28px;
   float: right;
+  color: rgb(255, 255, 255);
+}
+
+.price-filter-name {
+  margin-bottom: 9px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+  height: 36px;
+  margin-bottom: 20px;
+  font-size: 0;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background: rgb(255, 255, 255);
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 38px;
+  cursor: pointer;
+}
+
+.price-controls .min-price {
+  width: 30%;
+  padding-left: 20%;
+}
+
+.price-controls .max-price {
+  width: 30%;
+  padding-left: 16%;
+}
+
+.price-controls input {
+  width: 50px; /*задать в процентах*/
+  margin: 0;
+  color: inherit; 
+  font: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: rgb(255, 255, 255);
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: rgb(171, 171, 171);
+  border: 8px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: rgb(28, 79, 128);
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-price-filter {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-price-filter:hover {
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
 }
 
 .wrapper-search {
