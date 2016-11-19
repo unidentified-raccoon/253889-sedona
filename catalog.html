@@ -7,7 +7,7 @@
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
-	<body>
+	<body class="inner-page">
 <!--header-->
 		<header class="main-header">
 			<a class="logo-main" href="index.html" title="Sedona">
@@ -25,7 +25,7 @@
 <!--main-->
 		<main>
 			<h1 class="hidden-content">Седона - выбор гостиницы</h1><!--hidden h1-->
-<!--search-tools-->
+<!--блок инструментов поиска-->
 			<section class="filter-wrapper clearfix">
 				<div class="inner-block">
 					<div class="filter-infrastructure">
@@ -81,7 +81,7 @@
 					</div>
 				</div>
 			</section>
-<!--search-results-->
+<!--блок результатов поиска-->
 			<div class="wrapper-search">
 				<div class="inner-block">
 					<div class="results-amount">Найдено: 3</div>
@@ -91,13 +91,16 @@
 						<li class="range-type"><a href="#">По типу</a></li>
 						<li class="range-rating"><a href="#">По рейтингу</a></li>
 					</ul>
-					<div class="arrows"></div>
+					<div class="arrows">
+						<a class="arrow-switcher-up" href="#">Сортировать по возрастанию</a>
+						<a class="arrow-switcher-down arrow-active" href="#">Сортировать по убыванию</a>
+					</div>
 				</div>
 			</div>
 			<article class="hotel clearfix">
 				<div class="hotel-image"><img src="img/hotel-amara-resort.jpg" alt="Amara resort and spa hotel" height="90" width="135"></div>
 				<div class="hotel-info-wrapper clearfix">
-					<h2 class="hotel-name"><a href="#">Amara resort and spa</a></h2>
+					<h2 class="hotel-name"><a href="#">Amara resort &#38; spa</a></h2>
 					<div class="hotel-information">
 						<span class="hotel-type">Гостиница</span>
 						<a class="btn" href="#">Подробнее</a>

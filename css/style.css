@@ -202,8 +202,11 @@ main {
   z-index: 2;
   padding: 0 5px;
   margin: 0 auto;
-  margin-bottom: 21px;
   background-color: rgb(129, 179, 210);
+}
+
+.number-wrapper {
+  margin-bottom: 21px;
 }
 
 .number-wrapper::after {
@@ -211,14 +214,14 @@ main {
   position: relative;
   display: block;
   z-index: 1;
-  top: -32px;
+  top: -10px;
   margin: 0 auto;
   width: 50px;
   border-bottom: 1px solid rgb(255, 255, 255);
 }
 
 .advantage-text {
-  width: 300px;
+  width: 302px;
   margin: 0 auto;
   padding-bottom: 52px;
 }
@@ -248,7 +251,7 @@ main {
   position: relative;
   display: block;
   z-index: 1;
-  top: -32px;
+  top: -10px;
   margin: 0 auto;
   width: 50px;
   border-bottom: 1px solid rgb(0, 0, 0);
@@ -266,6 +269,7 @@ main {
 }
 
 .feature-wrapper {
+  padding: 0 0.5%;
   color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
 }
@@ -288,10 +292,27 @@ main {
   padding-top: 100px;
 }
 
+.feature-present-block .feature-name {
+  margin-left: 35%;
+}
+
+.feature-food-block .feature-name {
+  margin-left: 32%;
+}
+
 .feature-text {
   width: 285px;
+  padding-right: 1%;
   margin: 0 auto;
   padding-bottom: 82px;
+}
+
+.feature-present-block .feature-text {
+  padding-left: 8%;
+}
+
+.feature-food-block .feature-text {
+  padding-left: 4%;
 }
 
 .feature-home::before {
@@ -313,7 +334,7 @@ main {
   left: 50%;
   width: 75px;
   height: 72px;
-  margin-left: -38px;
+  margin-left: -34px;
   background: url('../img/spritesheet.png') no-repeat;
   background-position: -303px -10px;
 }
@@ -325,12 +346,13 @@ main {
   left: 50%;
   width: 75px;
   height: 76px;
-  margin-left: -38px;
+  margin-left: -35px;
   background: url('../img/spritesheet.png') no-repeat;
   background-position: -274px -192px;
 }
 
 .form-wrapper {
+  // position: relative;
   text-align: center;
   background-color: rgb(255, 255, 255);
 }
@@ -367,9 +389,11 @@ main {
 }
 
 .form-content {
-  width: 456px;
+  // position: relative;
+  z-index: 60;
+  width: 459px;
   margin: 0 auto;
-  padding: 55px 56px;
+  padding: 55px 56px 55px 53px;
   font-size: 0;
   background-color: rgb(255, 255, 255);
 }
@@ -390,8 +414,8 @@ main {
 }
 
 .form-date input {
-  width: 288px;
-  padding: 6px 38px 6px 15px;
+  width: 290px;
+  padding: 6px 41px 6px 15px;
   margin-bottom: 29px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
@@ -419,7 +443,7 @@ main {
 }
 
 .form-date input:active {
-  padding: 4px 36px 4px 13px;
+  padding: 4px 39px 4px 13px;
   background-color: transparent;
   border: 2px solid rgb(229, 229, 229);
 }
@@ -428,7 +452,7 @@ main {
   display: inline-block;
   vertical-align: top;
   height: 38px;
-  width: 114;
+  width: 114px;
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
@@ -454,21 +478,20 @@ main {
 .form-count-children>span {
   display: inline-block;
   vertical-align: top;
-  width: 56px;
-  padding: 6px 0 6px 43px;
+  width: 46px;
+  padding: 6px 0 6px 52px;
+  margin-right: 20px;
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
 }
 
 .form-content .btn {
-  width: 38px;
-  padding-bottom: 4px;
-  padding-top: 4px;
+  width: 34px;
   border: none;
   font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 24px;
+  line-height: 38px;
   color: rgb(169, 169, 169);
   font-weight: bold;
   outline: none;
@@ -544,6 +567,7 @@ main {
   background-color: rgb(84, 150, 189);
 }
 
+/*footer*/
 .footer-main {
   min-width: 768px;
   max-width: 1200px;
@@ -554,8 +578,14 @@ main {
   background-color: rgb(255, 255, 255);
 }
 
+.main-page .footer-main {
+  position: relative;
+  z-index: 8;
+}
+
 .footer-instagram-link {
   width: 33%;
+  margin-left: 0.5%;
   text-align: center;
   float: left;
 }
@@ -563,7 +593,7 @@ main {
 .footer-instagram-link a {
   display: inline-block;
   vertical-align: top;
-  padding-top: 11px;
+  padding-top: 10px;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -574,6 +604,7 @@ main {
 .footer-social {
   width: 33%;
   text-align: center;
+  // padding-right: 1%;
   float: left;
 }
 
@@ -582,7 +613,7 @@ main {
   vertical-align: top;
   width: 46px;
   height: 48px;
-  margin: 0 3px;
+  margin: 0 1px;
   text-decoration: none;
   background-color: rgb(129, 179, 210);
   font-size: 0;
@@ -632,6 +663,7 @@ main {
 
 .footer-copyright {
   width: 33%;
+  margin-right: 0.5%;
   text-align: center;
   float: right;
 }
@@ -682,8 +714,8 @@ main {
 
 .filter-infrastructure h2 {
   margin: 0;
+  margin-bottom: 22px;
   padding-top: 28px;
-  padding-bottom: 27px;
   font-size: 16px;
   line-height: 21px;
   font-weight: bold;
@@ -699,15 +731,14 @@ main {
 
 .filter-house-type h2 {
   margin: 0;
+  margin-bottom: 22px;
   padding-top: 28px;
-  padding-bottom: 27px;
   font-size: 16px;
   line-height: 21px;
   font-weight: bold;
   color: rgb(255, 255, 255);
 }
 
-/*two side columns*/
 .filter-checkbox {
   position: relative;
   display: block;
@@ -716,6 +747,14 @@ main {
   padding-top: 2px;
   cursor: pointer;
   color: rgb(255, 255, 255);
+}
+
+.filter-infrastracture .filter-checkbox:last-child {
+  margin-bottom: 31px;
+}
+
+.filter-house-type .filter-checkbox:last-child {
+  margin-bottom: 31px;
 }
 
 .filter-checkbox input[type="checkbox"] {
@@ -742,9 +781,8 @@ main {
   background-position: -134px -214px;
 }
 
-/*price filter*/
 .price-filter {
-  width: 26.6%;
+  width: 30%;
   padding-top: 28px;
   float: right;
   color: rgb(255, 255, 255);
@@ -759,8 +797,8 @@ main {
 
 .price-controls {
   position: relative;
-  height: 36px;
-  margin-bottom: 20px;
+  height: 34px;
+  margin-bottom: 18px;
   font-size: 0;
   border: 2px solid rgb(255, 255, 255);
   border-radius: 2px;
@@ -782,7 +820,7 @@ main {
   vertical-align: top;
   font-size: 14px;
   font-weight: normal;
-  line-height: 38px;
+  line-height: 34px;
   cursor: pointer;
 }
 
@@ -793,11 +831,11 @@ main {
 
 .price-controls .max-price {
   width: 30%;
-  padding-left: 16%;
+  padding-left: 17%;
 }
 
 .price-controls input {
-  width: 50px; /*задать в процентах*/
+  width: 50px;
   margin: 0;
   color: inherit; 
   font: inherit;
@@ -849,7 +887,8 @@ main {
 .btn-price-filter {
   display: block;
   margin: 0 auto;
-  padding: 6px 35px;
+  margin-left: 27%;
+  padding: 6px 34px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -876,8 +915,8 @@ main {
   display: inline-block;
   vertical-align: top;
   width: 130px;
-  padding-top: 28px;
-  margin-right: 45px;
+  padding-top: 29px;
+  margin-right: 32px;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -888,8 +927,8 @@ main {
   display: inline-block;
   vertical-align: top;
   min-width: 92px;
-  padding-top: 33px;
-  margin-top: 0;
+  padding-top: 37px;
+  margin: 0;
   font-size: 12px;
   line-height: 18px;
   font-weight: normal;
@@ -908,7 +947,7 @@ main {
 .filter-value li {
   display: inline-block;
   vertical-align: top;
-  padding: 33px 17px;
+  padding: 37px 17px 32px;
   font-size: 12px;
   line-height: 18px;
   color: rgb(177, 177, 177);
@@ -958,6 +997,48 @@ main {
   border-bottom: none;
 }
 
+.arrows {
+  float: right;
+  width: 35px;
+  height: 10px;
+  margin-top: 37px;
+  font-size: 0;
+}
+
+.arrow-switcher-up {
+  display: inline-block;
+  text-align: top;
+  width: 11px;
+  height: 10px;
+  background: url('../img/spritesheet.png') no-repeat;
+  background-position: -165px -10px;
+}
+
+.arrow-switcher-up:hover {
+  background-position: -103px -10px;
+}
+
+.arrow-switcher-up:active {
+  background-position: -134px -10px;
+}
+
+.arrow-switcher-down {
+  display: inline-block;
+  width: 11px;
+  height: 10px;
+  margin-left: 12px;
+  background: url('../img/spritesheet.png') no-repeat;
+  background-position: -41px -10px;
+}
+
+.arrow-switcher-down:hover {
+  background-position: -10px -10px;
+}
+
+.arrow-switcher-down:active {
+  background-position: -41px -10px;
+}
+
 .hotel {
   border-bottom: 1px solid rgb(229, 229, 229);
   padding: 0 6%;
@@ -978,7 +1059,7 @@ main {
 .hotel-name {
   padding-top: 25px;
   margin: 0;
-  margin-bottom: 7px;
+  margin-bottom: 8px;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -1004,13 +1085,13 @@ main {
 
 .hotel-type {
   display: block;
-  margin-bottom: 14px;
+  margin-bottom: 15px;
 }
 
 .hotel-information .btn {
   display: inline-block;
   vertical-align: top;
-  padding: 3px 16px;
+  padding: 3px 17px 4px;
   font-size: 14px;
   line-height: 21px;
   font-weight: bold;
@@ -1031,7 +1112,7 @@ main {
 
 .hotel-price {
   display: block;
-  margin-bottom: 14px;
+  margin-bottom: 15px;
 }
 
 .hotel-booking {
@@ -1041,7 +1122,7 @@ main {
 .hotel-booking .btn {
   display: inline-block;
   vertical-align: top;
-  padding: 3px 16px;
+  padding: 3px 17px 4px;
   font-size: 14px;
   line-height: 21px;
   font-weight: bold;
@@ -1070,7 +1151,7 @@ main {
 .rating-stars ul {
   padding: 0;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 46px;
   list-style: none;
 }
 
@@ -1087,7 +1168,11 @@ main {
 .rating-points {
   display: inline-block;
   vertical-align: top;
-  padding: 0 12px 0 15px;;
+  padding: 2px 12px 3px 15px;;
   background-color: rgb(242, 242, 242);
   color: rgb(102, 102, 102);
 }
+
+// .map {
+//   z-index: 3;
+// }
