@@ -10,6 +10,14 @@ body {
   background-color: rgb(242, 242, 242);
 }
 
+.shadow {
+  position: relative;
+  box-shadow: 5px 0 30px rgba(110, 110, 110, 0.2), -5px 0 30px rgba(110, 110, 110, 0.2);
+  min-width: 768px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 /*скрывает контент предназначенный только для "читалок"*/
 .hidden-content {
   position: absolute;
@@ -75,7 +83,7 @@ header {
 }
 
 .navigation-main li {
-  display: inline-block;
+  float: left;
   vertical-align: top;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;/*восстанавливает размер шрифта после обнуления пробелов*/
@@ -84,8 +92,8 @@ header {
   width: 20%;
 }
 
-.navigation-main li:nth-child(2) {
-  margin-right: 20%;
+.navigation-main li:nth-child(n+3) {
+  float: right;
 }
 
 .logo-main {
@@ -227,6 +235,7 @@ main {
 }
 
 .advantage-row {
+  padding: 0 0.5%;
   background-color: rgb(238, 238, 238);
 }
 
@@ -270,6 +279,8 @@ main {
 
 .feature-wrapper {
   padding: 0 0.5%;
+  padding-top: 60px;
+  padding-bottom: 82px;
   color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
 }
@@ -284,7 +295,6 @@ main {
   position: relative;
   width: 150px;
   margin: 0 auto;
-  margin-top: 60px;
   margin-bottom: 26px;
   font-size: 21px;
   line-height: 21px;
@@ -292,27 +302,9 @@ main {
   padding-top: 100px;
 }
 
-.feature-present-block .feature-name {
-  margin-left: 35%;
-}
-
-.feature-food-block .feature-name {
-  margin-left: 32%;
-}
-
 .feature-text {
   width: 285px;
-  padding-right: 1%;
   margin: 0 auto;
-  padding-bottom: 82px;
-}
-
-.feature-present-block .feature-text {
-  padding-left: 8%;
-}
-
-.feature-food-block .feature-text {
-  padding-left: 4%;
 }
 
 .feature-home::before {
@@ -346,13 +338,12 @@ main {
   left: 50%;
   width: 75px;
   height: 76px;
-  margin-left: -35px;
+  margin-left: -30px;
   background: url('../img/spritesheet.png') no-repeat;
   background-position: -274px -192px;
 }
 
 .form-wrapper {
-  // position: relative;
   text-align: center;
   background-color: rgb(255, 255, 255);
 }
@@ -376,11 +367,10 @@ main {
 }
 
 .form-header {
-  width: 568px;
+  width: 528px;
   margin: 0 auto;
   text-align: center;
-  padding-top: 28px;
-  padding-bottom: 33px;
+  padding: 28px 20px 33px;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -389,7 +379,10 @@ main {
 }
 
 .form-content {
-  // position: relative;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform:translateX(-284px);
   z-index: 60;
   width: 459px;
   margin: 0 auto;
@@ -400,6 +393,10 @@ main {
 
 .form-fields-wrapper {
   margin-bottom: 55px;
+}
+
+.form-date {
+  font-size: 0;
 }
 
 .form-date span {
@@ -579,8 +576,12 @@ main {
 }
 
 .main-page .footer-main {
-  position: relative;
+  position: absolute;
   z-index: 8;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .footer-instagram-link {
@@ -604,7 +605,6 @@ main {
 .footer-social {
   width: 33%;
   text-align: center;
-  // padding-right: 1%;
   float: left;
 }
 
@@ -1173,6 +1173,14 @@ main {
   color: rgb(102, 102, 102);
 }
 
-// .map {
-//   z-index: 3;
-// }
+.hotel-search-block {
+  position: relative;
+  z-index: 6;
+  height: 592px;
+  width: 100%;
+}
+
+iframe {
+  width: 100%;
+  border: none;
+}
