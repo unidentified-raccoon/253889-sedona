@@ -5,7 +5,7 @@
 		<title>Седона</title>
 		<link rel="stylesheet" href="css/normalize.css">
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/style.min.css">
 	</head>
 	<body class="inner-page">
 		<div class="shadow">
@@ -28,8 +28,8 @@
 				<h1 class="hidden-content">Седона - выбор гостиницы</h1><!--скрытый заголовок - только для читалок-->
 				<section class="filter-wrapper clearfix">
 					<form class="inner-block">
-						<div class="filter-infrastructure">
-							<h2>Инфраструктура:</h2>
+						<fieldset class="filter-infrastructure">
+							<legend>Инфраструктура:</legend>
 		    				<label class="filter-checkbox">
 		    					<input type="checkbox">
 		    					<span class="checkbox-indicator"></span>
@@ -45,9 +45,9 @@
 	                			<span class="checkbox-indicator"></span>
 	                			wi-fi
 		    				</label>
-						</div>
-						<div class="filter-house-type">
-							<h2>Тип жилья:</h2>
+						</fieldset>
+						<fieldset class="filter-house-type">
+							<legend>Тип жилья:</legend>
 		    				<label class="filter-checkbox">
 		    					<input type="checkbox">
 		              			<span class="checkbox-indicator"></span>
@@ -63,7 +63,7 @@
 		              			<span class="checkbox-indicator"></span>
 		    					Апартаменты
 		    				</label>
-						</div>
+						</fieldset>
 						<div class="price-filter">
 							<div class="price-filter-name">Стоимость в сутки (р):</div>
 							<div class="price-controls">

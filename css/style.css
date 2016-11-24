@@ -212,19 +212,16 @@ main {
   z-index: 2;
   padding: 0 5px;
   margin: 0 auto;
+  margin-bottom: 21px;
   background-color: rgb(129, 179, 210);
 }
 
-.number-wrapper {
-  margin-bottom: 21px;
-}
-
-.number-wrapper::after {
+.advantage-name::after {
   content: '';
   position: relative;
   display: block;
   z-index: 1;
-  top: -10px;
+  top: 37px;
   margin: 0 auto;
   width: 50px;
   border-bottom: 1px solid rgb(255, 255, 255);
@@ -257,12 +254,12 @@ main {
   background-color: rgb(238, 238, 238);
 }
 
-.advantage-row .number-wrapper::after {
+.advantage-row .advantage-name::after {
   content: '';
   position: relative;
   display: block;
   z-index: 1;
-  top: -10px;
+  top: 37px;
   margin: 0 auto;
   width: 50px;
   border-bottom: 1px solid rgb(0, 0, 0);
@@ -318,7 +315,7 @@ main {
   height: 72px;
   margin-left: -38px;
   background: url('../img/spritesheet.png') no-repeat;
-  background-position: -276px -100px;
+  background-position: -10px -1186px;
 }
 
 .feature-food::before {
@@ -330,7 +327,7 @@ main {
   height: 72px;
   margin-left: -34px;
   background: url('../img/spritesheet.png') no-repeat;
-  background-position: -303px -10px;
+  background-position: -10px -1096px;
 }
 
 .feature-present::before {
@@ -342,7 +339,7 @@ main {
   height: 76px;
   margin-left: -30px;
   background: url('../img/spritesheet.png') no-repeat;
-  background-position: -274px -192px;
+  background-position: -10px -1278px;
 }
 
 .form-wrapper {
@@ -378,6 +375,7 @@ main {
   font-weight: bold;
   color: rgb(255, 255, 255);
   background-color: rgb(118, 99, 87);
+  cursor: pointer;
 }
 
 .form-content {
@@ -532,15 +530,15 @@ main {
   width: 21px;
   height: 22px;
   background: url('../img/spritesheet.png') no-repeat;
-  background-position: -51px -214px;
+  background-position: -10px -886px;
 }
 
 .calendar-icon:hover {
-  background-position: -262px -10px;
+  background-position: -10px -802px;
 }
 
 .calendar-icon:active {
-  background-position: -10px -214px;
+  background-position: -10px -844px;
 }
 
 .btn-search {
@@ -574,7 +572,7 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   padding-top: 36px;
-  padding-bottom: 36px;
+  padding-bottom: 32px;
   color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
 }
@@ -626,43 +624,43 @@ main {
 .social-btn-twitter {
   background-image: url('../img/spritesheet.png');
   background-repeat: no-repeat;
-  background-position: -144px -78px;
+  background-position: -10px -394px;
 }
 
 .social-btn-twitter:hover {
-  background-position: -10px -146px;
+  background-position: -10px -530px;
 }
 
 .social-btn-twitter:active {
-  background-position: -210px -78px;
+  background-position: -10px -462px;
 }
 
 .social-btn-fb {
   background-image: url('../img/spritesheet.png');
   background-repeat: no-repeat;
-  background-position: -196px -10px;
+  background-position: -9px -190px;
 }
 
 .social-btn-fb:hover {
-  background-position: -77px -78px;
+  background-position: -10px -326px;
 }
 
 .social-btn-fb:active {
-  background-position: -10px -78px;
+  background-position: -10px -258px;
 }
 
 .social-btn-youtube {
   background-image: url('../img/spritesheet.png');
   background-repeat: no-repeat;
-  background-position: -76px -146px;
+  background-position: -10px -598px;
 }
 
 .social-btn-youtube:hover {
-  background-position: -208px -146px;
+  background-position: -10px -734px;
 }
 
 .social-btn-youtube:active {
-  background-position: -142px -146px;
+  background-position: -10px -666px;
 }
 
 .footer-copyright {
@@ -712,11 +710,14 @@ main {
 }
 
 .filter-infrastructure {
+  margin: 0;
+  padding: 0;
+  border: none;
   width: 150px;
   float: left;
 }
 
-.filter-infrastructure h2 {
+.filter-infrastructure legend {
   margin: 0;
   margin-bottom: 22px;
   padding-top: 28px;
@@ -729,11 +730,13 @@ main {
 .filter-house-type {
   width: 150px;
   float: left;
+  padding: 0;
   margin-left: 105px;
   background-color: rgba(60, 103, 137);
+  border: none;
 }
 
-.filter-house-type h2 {
+.filter-house-type legend {
   margin: 0;
   margin-bottom: 22px;
   padding-top: 28px;
@@ -772,11 +775,11 @@ main {
   width: 22px;
   height: 22px;
   background: url('../img/spritesheet.png') no-repeat;
-  background-position: -92px -214px;
+  background-position: -10px -928px;
 }
 
 .filter-checkbox input[type="checkbox"]:disabled + .checkbox-indicator {
-  background-position: -180px -214px;
+  background-position: -10px -1012px;
 }
 
 .filter-checkbox input[type="checkbox"]:checked + .checkbox-indicator {
@@ -786,11 +789,11 @@ main {
   width: 26px;
   height: 22px;
   background: url('../img/spritesheet.png') no-repeat;
-  background-position: -134px -214px;
+  background-position: -10px -970px;
 }
 
 .filter-checkbox input[type="checkbox"]:checked:disabled + .checkbox-indicator {
-  background-position: -222px -214px;
+  background-position: -10px -1054px;
 }
 
 .price-filter {
@@ -1020,15 +1023,15 @@ main {
   width: 11px;
   height: 10px;
   background: url('../img/spritesheet.png') no-repeat;
-  background-position: -165px -10px;
+  background-position: -10px -160px;
 }
 
 .arrow-switcher-up:hover {
-  background-position: -103px -10px;
+  background-position: -10px -100px;
 }
 
 .arrow-switcher-up:active {
-  background-position: -134px -10px;
+  background-position: -10px -130px;
 }
 
 .arrow-switcher-down {
@@ -1037,7 +1040,7 @@ main {
   height: 10px;
   margin-left: 12px;
   background: url('../img/spritesheet.png') no-repeat;
-  background-position: -41px -10px;
+  background-position: -10px -40px;
 }
 
 .arrow-switcher-down:hover {
@@ -1045,7 +1048,7 @@ main {
 }
 
 .arrow-switcher-down:active {
-  background-position: -41px -10px;
+  background-position: -10px -40px;
 }
 
 .hotel {
@@ -1066,6 +1069,7 @@ main {
 }
 
 .hotel-name {
+  max-width: 400px;
   padding-top: 25px;
   margin: 0;
   margin-bottom: 8px;
@@ -1171,7 +1175,7 @@ main {
   width: 18px;
   height: 17px;
   background: url('../img/spritesheet.png') no-repeat;
-  background-position: -10px -278px;
+  background-position: -10px -1460px;
 }
 
 .rating-points {
@@ -1200,4 +1204,29 @@ iframe {
   height: 592px;
   width: 100%;
   border: none;
+}
+
+.pop-up-hidden {
+  display: none;
+}
+
+.pop-up-animation {
+  display: block;
+  overflow: hidden;
+  animation: bounce 0.2s;
+}
+
+@keyframes bounce {
+  0% {
+    max-height: 0;
+  }
+  70% {
+    max-height: 160px;
+  }
+  90% {
+    max-height: 350px;
+  }
+  100% {
+    max-height: 500px;
+  }
 }
